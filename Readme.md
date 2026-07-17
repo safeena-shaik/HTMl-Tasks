@@ -14,12 +14,6 @@ Laundry Mart is a simple static website created using HTML. It provides informat
 ## Technologies Used
 - HTML5
 
-## Project Structure
-```
-Laundry-Mart/
-│── index.html
-│── README.md
-```
 
 Project is deployed using Github
 
