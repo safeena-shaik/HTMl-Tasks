@@ -1,0 +1,45 @@
+body{
+    background-color: #d5c6e0;
+}
+
+.head{
+    color:blue;
+}
+
+#bglime{
+    background-color: lime;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+p{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+#green {
+    color: green;
+}
+
+a[href*="typidmafia"]{
+    background-color: yellow;
+}
+
+a[href*="google"]{
+    background-color: blue;
+    color: white;
+}
+
+ol li:nth-child(2){
+    color: blue;
+}
+
+ol li:nth-child(3){
+    color: red;
+}
