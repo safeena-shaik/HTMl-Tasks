@@ -33,13 +33,6 @@ Task-3/
 2. Open the project folder.
 3. Double-click `index.html` or open it in any web browser.
 
-## Preview
-
-The webpage displays:
-- A centered image
-- A full-width gradient "View" button
-- Responsive spacing using viewport units
-
 ## Author
 
 **Shaik Mehaboob Safeena**
