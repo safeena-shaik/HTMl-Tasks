@@ -1,0 +1,189 @@
+/* Removes the browser's default margin and padding so every browser starts from the same layout */
+*{
+    padding: 0;
+    margin: 0;
+
+    /* Sets Poppins as the default font for the entire webpage */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styling */
+nav{
+
+    /* Navbar occupies 10% of the screen height */
+    height: 10vh;
+
+    /* Creates space inside the navbar.
+       20px → top & bottom
+       40px → left & right
+       This prevents the content from touching the screen edges. */
+    padding: 20px 40px;
+}
+
+/* Common properties shared by Logo, Menu and User sections */
+.div{
+
+    /* Makes divs appear side by side instead of one below another.
+       We are using inline-block without using flexbox. */
+    display: inline-block;
+
+    /* Aligns all three sections along the same horizontal line. */
+    vertical-align: middle;
+}
+
+/* Logo section */
+#logo{
+
+    /* Reserves approximately 20% of the navbar width for the logo.
+       This keeps the logo's position stable even if the text changes. */
+    width: 20%;
+
+    /* Makes the logo larger than the navigation links. /* rem (Root EM) is relative to the root (<html>) font size.
+    By default, 1rem = 16px. Using rem makes text scale better across browsers and user settings,
+   making the website more accessible and easier to maintain. */
+    font-size: 1.5rem;
+
+    /* Makes the logo bold to attract attention. */
+    font-weight: bold;
+
+    /* Optional because body already uses Poppins.
+       Included here in case you want a different logo font later. */
+    font-family: 'Poppins', sans-serif;
+    color: #28788F;
+}
+
+/* Navigation menu section */
+#menu{
+
+    /* Gives the menu most of the navbar width.
+       Slightly less than 60% because inline-block adds small spaces
+       between elements. 58% prevents the Username section from wrapping. */
+    width: 58%;
+
+    /* Prevents links from breaking into multiple lines. */
+    white-space: nowrap;
+
+    /* Centers all navigation links inside the menu section. */
+    text-align: center;
+}
+
+/* Individual navigation links */
+#menu a{
+
+    /* Adds equal spacing between menu items. */
+    margin: 0 15px;
+
+    /* Removes the default underline from links. */
+    text-decoration: none;
+
+    /* Sets the link color to black. */
+    color: black;
+}
+
+/* Username section */
+#user{
+
+    /* Reserves space on the right side of the navbar. */
+    width: 20%;
+
+    /* Pushes the username/button to the right side of its section. */
+    text-align: right;
+}
+
+/* Username button styling */
+#user a{
+
+    /* Removes default underline */
+    text-decoration: none;
+
+    /* Text color */
+    color: black;
+
+    /* Creates the border around the button */
+    border-style: solid;
+
+    /* Border thickness */
+    border-width: 2px;
+
+    /* Adds space inside the button.
+       Increases button size without changing the font size. */
+    padding: 10px 15px;
+
+    /* Button background color */
+    background-color: #28788F;
+
+    /* Makes the border the same color as the background for a clean look. */
+    border: none;
+
+    /* Rounds the corners for a modern UI appearance. */
+    border-radius: 8px;
+
+    /* Final text color (overrides the earlier black color). */
+    color: rgb(248, 249, 249);
+}
+/* Hero section container. */
+.hero{
+    display: flex;
+}
+/* Common styling for both hero sections.
+   display: inline-block allows them to stay on the same line.
+   width: 48% gives each section almost half of the available space.
+   vertical-align: middle aligns both sections vertically. */
+#left,#right{
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+/* Main heading styling.
+   4rem makes the heading large and eye-catching.
+   margin-bottom creates space between the heading and paragraph. */
+h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+/* Highlights only the words wrapped inside the span. */
+#highlight{
+    color: #28788F;
+}
+/* Paragraph styling.
+   1rem provides a readable font size.
+   width: 80% keeps line length comfortable for reading.
+   text-align: justify gives both left and right edges a neat look.
+   Roboto provides good readability for paragraph text. */
+p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+/* Button styling.
+   padding increases the clickable area.
+   border: none removes the default browser border.
+   border-radius creates rounded corners for a modern look. */
+button{
+    padding: 15px 20px;
+    font-size: 1rem;
+    background-color: #28788F;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+/* Left hero section.
+   width: 50% reserves half of the hero area.
+   padding creates internal spacing.
+   margin-left shifts the content slightly right to match the design.
+   margin-top moves the content downward for better alignment. */
+#left{
+    width: 50%;
+    padding: 20px;
+    margin-left: 8.5vw;
+    margin-top: 10vh;
+}
+/* Hero image styling.
+   width: 90% keeps the image inside its container with some space around it.
+   height: 100% allows the image to use the available container height. */
+#right img{
+    height: 100%;
+    width: 90%;
+}
